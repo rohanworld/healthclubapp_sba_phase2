@@ -1,0 +1,76 @@
+<!-- <div class="logo">
+
+</div>
+<div class="navbar">
+
+</div>
+
+<div class="sidebar">
+  <button (click)="landingpage()">Home</button><br>
+  <button (click)="placeAppointment()">Place Appointment</button><br>
+  <button (click)="viewAppointment()">View Appointment</button><br>
+  <button (click)="contactUspage()">Contact Us</button>
+
+</div>
+<router-outlet></router-outlet> -->
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <ul class="nav navbar-nav">
+      <li>
+        <img
+          width="100"
+          height="50"
+          src="https://1000logos.net/wp-content/uploads/2017/02/IBM-Logo-1972.jpg"
+          alt="IBM LOGO"
+        />
+      </li>
+
+      <li>
+        <button
+          class="btn btn-link"
+          [ngClass]="{ 'font-weight-bold': isCurrentRoute('/landing-page') }"
+          (click)="landingpage()"
+        >
+          Home
+        </button>
+      </li>
+      <li>
+        <button
+          class="btn btn-link"
+          [ngClass]="{
+            'font-weight-bold': isCurrentRoute(
+              '/place-fitness-trainer-appointment'
+            )
+          }"
+          (click)="placeAppointment()"
+        >
+          Place Appointment
+        </button>
+      </li>
+      <li>
+        <button
+          class="btn btn-link"
+          [ngClass]="{
+            'font-weight-bold': isCurrentRoute('/view-appointment')
+          }"
+          (click)="viewAppointment()"
+        >
+          View Appointment
+        </button>
+      </li>
+      <li>
+        <button
+          class="btn btn-link"
+          [ngClass]="{ 'font-weight-bold': isCurrentRoute('/contact-us') }"
+          (click)="contactUspage()"
+        >
+          Contact Us
+        </button>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+<div class="container"></div>
+<router-outlet></router-outlet>
+

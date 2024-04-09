@@ -1,0 +1,43 @@
+<table class="table">
+  <thead>
+    <tr>
+      <th>First Name</th>
+      <th>Last Name</th>
+      <th>Age</th>
+      <th>Phone Number</th>
+      <th>Email</th>
+      <th>Street Address</th>
+      <th>City</th>
+      <th>State</th>
+      <th>Country</th>
+      <th>Pincode</th>
+      <th>Trainer Preference</th>
+      <th>Physiotherapist</th>
+      <th>Packages</th>
+      <th>INR</th>
+      <th>Actions</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let appointment of appointments">
+      <td>{{ appointment.firstname }}</td>
+      <td>{{ appointment.lastname }}</td>
+      <td>{{ appointment.age }}</td>
+      <!-- <td>{{ appointment.phonenumber }}</td>
+      <td>{{ appointment.email }}</td>
+      <td>{{ appointment.streetaddress }}</td>
+      <td>{{ appointment.city }}</td>
+      <td>{{ appointment.state }}</td>
+      <td>{{ appointment.country }}</td>
+      <td>{{ appointment.pincode }}</td>
+      <td>{{ appointment.trainerpreference }}</td>
+      <td>{{ appointment.physiotherapist }}</td>
+      <td>{{ appointment.packages }}</td>
+      <td>{{ appointment.inr }}</td> -->
+      <td>
+        <button (click)="editAppointment(appointment.id)">Edit</button>
+        <button (click)="deleteAppointment(appointment.id)">Delete</button>
+      </td>
+    </tr>
+  </tbody>
+</table>

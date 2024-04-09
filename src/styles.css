@@ -1,0 +1,116 @@
+/* You can add global styles to this file, and also import other style files */
+/* .introtext{
+  color: aqua;
+} */
+
+/* Add global styles here */
+.introtext {
+  color: aqua;
+  margin-top: 50px; /* Adjust as needed */
+}
+
+.footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: #f8f9fa; /* Adjust as needed */
+  padding: 10px 0;
+  text-align: center;
+}
+
+.appointment-form {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.form-row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 15px;
+}
+
+.form-row .form-group {
+  flex: 0 0 50%;
+  margin-bottom: 0;
+  padding-right: 15px;
+}
+
+.contact-form {
+  width: 300px;
+  margin: auto;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-control {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.error-message {
+  color: red;
+  font-size: 12px;
+}
+
+/* place appoitnemnt form */
+.container1 {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+}
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+input,
+select {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+.form-group1 {
+  margin-bottom: 20px;
+}
+.form-group1.two-columns {
+  display: flex;
+}
+.form-group1.two-columns > div {
+  flex: 1;
+  margin-right: 10px;
+}
+.form-group1.two-columns > div:last-child {
+  margin-right: 0;
+}
+.form-group1.two-columns > div input {
+  margin-bottom: 0;
+}
+.error-message {
+  color: red;
+  margin-top: 5px;
+}
+.success-message {
+  color: green;
+  margin-top: 5px;
+}
+button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+button:hover {
+  background-color: #0056b3;
+}
